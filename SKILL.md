@@ -216,6 +216,7 @@ On single papers under 50k tokens, a single read is fine.
 Read the first 8,000 characters of the extracted `full_text.txt` to identify:
 - Paper **title** and **author(s)**
 - **Section structure** (Abstract, Introduction, Methods, Results, Discussion, Conclusion)
+- **Research motivation** (the real-world problem or gap that drove this research)
 - **Core research question(s)** and subject domain
 - Approximate number of major sections
 
@@ -224,6 +225,10 @@ Then scan for section headings throughout the paper.
 **If mode is "Analyze Only":** produce the extraction report now and stop. Structure:
 ```
 ## Extraction Report — <Title>
+
+### Research Motivation
+- **Problem/Gap**: <what real-world problem or knowledge gap motivated this research>
+- **Why it matters**: <practical or theoretical significance>
 
 ### Research Questions & Hypotheses
 - **RQ<N>**: <research question>
@@ -329,6 +334,7 @@ For EACH major section identified in Step 3, create `$SKILLS_HOME/<skill_name>/s
 <1–2 sentences: the single most important thing this section contributes>
 
 ## Research Context
+- **Motivation**: <why this aspect of the problem needs to be addressed>
 - **Problem addressed**: <what gap or question this section tackles>
 - **Relation to paper's thesis**: <how it supports the overall argument>
 
@@ -430,6 +436,9 @@ the relevant section file before answering.
 
 ## Abstract
 <paper's abstract, condensed to 2–3 sentences>
+
+## Research Motivation
+<1–2 sentences: what real-world problem or knowledge gap motivated this research, why existing solutions are insufficient>
 
 ## Core Contributions & Methods
 <!-- ~2,000 tokens: the paper's most important contributions, methods, and findings.
